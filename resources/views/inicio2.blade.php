@@ -20,7 +20,6 @@
 <br>
 <br>
 <br>
-<br>
 <footer class="text-center mt-5 bg-dark text-primary">
     <h2>Email y usuario autenticado:</h2>
     <br>
