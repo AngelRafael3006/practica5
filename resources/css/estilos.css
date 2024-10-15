@@ -1,0 +1,25 @@
+
+            .dropdown-menu.horizontal {
+                display: flex;
+                gap: 10px; 
+            }
+            
+            .dropdown-item {
+                white-space: nowrap; 
+            }
+
+            #page-container {
+                position: relative;
+                min-height: 100vh;
+              }
+              
+              #content-wrap {
+                padding-bottom: 2.5rem;    /* altura de pie de página */
+              }
+              
+              #footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 2.5rem;            /* altura de pie de página */
+              }
