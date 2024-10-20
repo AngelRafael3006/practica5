@@ -1,38 +1,41 @@
 <?php
 
+use App\Http\Controllers\AlumnoController;
+use App\Http\Controllers\PlazaController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PuestoController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('inicio');
-});
-
-Route::get('inicio', function () {
-    return view('inicio');
-});
 
 
-Route::get('/acerca', function () {
-    return view('acerca');
-})->name("acerca");
+Route::resource("alumnos",AlumnoController::class);
 
-Route::get('/ayuda', function () {
-    return view('ayuda');
-})->name("ayuda");
+Route::resource("puestos",PuestoController::class);
 
-Route::get('/contactanos', function () {
-    return view('contactanos');
-})->name("contactanos");
+Route::resource("plazas",PlazaController::class);
+
+
+
+
+
+
+
+
+
+
+
 
 Route::get('/', function () {
-        return view('inicio');
-    });
+    return view('inicio/inicio1');
+});
 
-Route::get('inicio', function () {
-    return view('inicio2');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+    Route::get('/dashboard', function () {
+        return view('inicio/inicio2');
+    })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

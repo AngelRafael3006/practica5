@@ -1,4 +1,4 @@
-@extends("plantilla/plantilla2")
+@extends('plantilla/plantilla2')
 
 @section("contenido1")
 <div class="container-xl text-center">
@@ -20,15 +20,17 @@
 <br>
 <br>
 <br>
+<br>
 <footer class="text-center mt-5 bg-dark text-primary">
     <h2>Email y usuario autenticado:</h2>
     <br>
     @auth
     <h3>Usuario: {{ Auth::user()->name }}</h3>
-    
+
     <h3>Email: {{ Auth::user()->email }}</h3>
-    
+
     @endauth
 </footer>
 @endsection
+
 

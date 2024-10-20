@@ -1,9 +1,9 @@
-@extends("plantilla/plantilla2")
+@extends('plantilla/plantilla1')
 
 @section("contenido1")
 <html>
 <body>
-    
+
 
 <div class="container-xl text-center">
 
@@ -20,6 +20,7 @@
 <br>
 <br>
 <br>
+
 <footer class="footer text-center mt-5 bg-dark text-primary">
     <h2>Tecnologias utilizadas en el proyecto</h2>
     <br>
@@ -28,11 +29,12 @@
     <li><a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank">Pagina web PHP</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Pagina web HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Pagina web CSS</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Pagina web JAVASCRIPT</a></li>    
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Pagina web JAVASCRIPT</a></li>
 
     </ul>
 </footer>
 </body>
 </html>
 @endsection
+
 

@@ -1,4 +1,4 @@
-@auth
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +12,7 @@
     <div <div class="container">
         <div class="row">
             <div class="col">
-                @include("plantilla/menu2")
+                @include("plantilla/menu1")
             </div>
         </div>
     <div class="row">
@@ -29,4 +29,3 @@
 
 </body>
 </html>
-@endauth
