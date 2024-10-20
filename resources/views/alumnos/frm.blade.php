@@ -39,21 +39,21 @@
             </div>
         </div>
         <div class="mb-3 row">
-            <label for="nombre" class="col-4 col-form-label">Nombre del alumno</label>
+            <label for="nombrealumno" class="col-4 col-form-label">Nombre del alumno</label>
             <div class="col-8">
-                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre del alumno"
-                    value="{{ @old('nombre', $alumno->nombre) }} " {{ $des }} />
-                @error('nombre')
+                <input type="text" class="form-control" name="nombrealumno" id="nombrealumno" placeholder="Nombre del alumno"
+                    value="{{ @old('nombrealumno', $alumno->nombrealumno) }} " {{ $des }} />
+                @error('nombrealumno')
                     <p>Error en el nombre del alumno: {{ $message }}</p>
                 @enderror
             </div>
         </div>
         <div class="mb-3 row">
-            <label for="apellidop" class="col-4 col-form-label">Apellido paterno</label>
+            <label for="apellidopaterno" class="col-4 col-form-label">Apellido paterno</label>
             <div class="col-8">
-                <input type="text" class="form-control" name="apellidop" id="apellidop" placeholder="Apellido paterno"
-                    value="{{ @old('apellidop', $alumno->apellidop) }} " {{ $des }} />
-                @error('apellidop')
+                <input type="text" class="form-control" name="apellidopaterno" id="apellidopaterno" placeholder="Apellido paterno"
+                    value="{{ @old('apellidopaterno', $alumno->apellidopaterno) }} " {{ $des }} />
+                @error('apellidopaterno')
                     <p>Error en el apellido paterno: {{ $message }}</p>
                 @enderror
             </div>
@@ -61,8 +61,8 @@
         <div class="mb-3 row">
             <label for="tipo" class="col-4 col-form-label">Apellido materno</label>
             <div class="col-8">
-                <input type="text" class="form-control" name="apellidom" id="apellidom" placeholder="Apellido materno"
-                    value="{{ @old('apellidom', $alumno->apellidom) }} " {{ $des }} />
+                <input type="text" class="form-control" name="apellidomaterno" id="apellidomaterno" placeholder="Apellido materno"
+                    value="{{ @old('apellidomaterno', $alumno->apellidomaterno) }} " {{ $des }} />
                 @error('tipo')
                     <p>Error en el apellido materno: {{ $message }}</p>
                 @enderror

@@ -14,9 +14,9 @@ class AlumnoController extends Controller
         $this->alumnos = Alumno::paginate(5);
         $this->val=[
             'noctrl'=>'required',
-            'nombre'=>['required', 'min:3','max:50','regex:/^[\p{L}\s]+$/u'],
-            'apellidop'=>'required',
-            'apellidom'=>'required',
+            'nombrealumno'=>['required', 'min:3','max:50','regex:/^[\p{L}\s]+$/u'],
+            'apellidopaterno'=>'required',
+            'apellidomaterno'=>'required',
             'sexo'=>'required'
         ];
      }
