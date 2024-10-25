@@ -12,11 +12,11 @@
                         <a class="dropdown-item" href="#">Periodos</a>
                         <a class="dropdown-item" href="{{route('plazas.index')}}">Plazas</a>
                         <a class="dropdown-item" href="{{route('puestos.index')}}">Puestos</a>
-                        <a class="dropdown-item" href="#">Personal</a>
-                        <a class="dropdown-item" href="#">Deptos</a>
-                        <a class="dropdown-item" href="#">Carreras</a>
-                        <a class="dropdown-item" href="#">Reticulas</a>
-                        <a class="dropdown-item" href="#">Materias</a>
+                        <a class="dropdown-item" href="{{route('periodos.index')}}">Periodos</a>
+                        <a class="dropdown-item" href="{{route('deptos.index')}}">Deptos</a>
+                        <a class="dropdown-item" href="{{route('carreras.index')}}">Carreras</a>
+                        <a class="dropdown-item" href="{{route('reticulas.index')}}">Reticulas</a>
+                        <a class="dropdown-item" href="{{route('materias.index')}}">Materias</a>
                         <a class="dropdown-item" href="{{route('alumnos.index')}}">Alumnos</a>
                     </div>
                 </li>

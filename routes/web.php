@@ -4,6 +4,11 @@ use App\Http\Controllers\AlumnoController;
 use App\Http\Controllers\PlazaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PuestoController;
+use App\Http\Controllers\DeptoController;
+use App\Http\Controllers\CarreraController;
+use App\Http\Controllers\ReticulaController;
+use App\Http\Controllers\MateriaController;
+use App\Http\Controllers\PeriodoController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -13,6 +18,16 @@ Route::resource("alumnos",AlumnoController::class);
 Route::resource("puestos",PuestoController::class);
 
 Route::resource("plazas",PlazaController::class);
+
+Route::resource("deptos",DeptoController::class);
+
+Route::resource("carreras",CarreraController::class);
+
+Route::resource("reticulas",ReticulaController::class);
+
+Route::resource("materias",MateriaController::class);
+
+Route::resource("periodos",PeriodoController::class);
 
 
 
