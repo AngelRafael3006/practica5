@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("idplaza",25);
             $table->string("nombreplaza",200);
             $table->timestamps();
-        });
+        });//nnnb
     }
 
     /**

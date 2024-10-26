@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string("tipo",200);
             $table->timestamps();
         });
-    }
+    }//jj
 
     /**
      * Reverse the migrations.
