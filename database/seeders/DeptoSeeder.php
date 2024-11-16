@@ -18,15 +18,15 @@ class DeptoSeeder extends Seeder
      */
     public function run(): void
     {
-        Depto::factory(7) // Crea 7 departamentos
+        Depto::factory(7)
     ->has(Carrera::factory(1)
-        ->has(Alumno::factory(1)) // Crea 1 alumno por cada carrera
+        ->has(Alumno::factory(1))
         ->has(Reticula::factory(1)
-            ->has(Materia::factory(2)) // Crea 2 materias por cada retícula
+            ->has(Materia::factory(2))
         )
     )
-    ->has(Personal::factory(2) // Crea 2 personas por cada departamento
-        ->has(PersonalPlaza::factory(3)) // Crea 3 plazas para cada personal
+    ->has(Personal::factory(2)
+        ->has(PersonalPlaza::factory(3)) 
     )
     ->create();
     }
