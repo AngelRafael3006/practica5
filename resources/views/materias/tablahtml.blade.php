@@ -13,7 +13,6 @@
                 </caption>
                 <tr>
                     <th>ID</th>
-                    <th>Id materia</th>
                     <th>Nombre de materia</th>
                     <th>Nivel</th>
                     <th>Nombre mediano</th>
@@ -31,7 +30,6 @@
                     class="table-warning"
                 >
                     <td scope="row">{{ $materia->id }}</td>
-                    <td>{{ $materia->idmateria }}</td>
                     <td>{{ $materia->nombremateria }}</td>
                     <td>{{ $materia->nivel }}</td>
                     <td>{{ $materia->nombremediano }}</td>

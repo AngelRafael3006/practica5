@@ -27,7 +27,6 @@
                     class="table-warning"
                 >
                     <td scope="row">{{ $reticula->id }}</td>
-                    <td>{{ $reticula->idreticula }}</td>
                     <td>{{ $reticula->descripcion }}</td>
                     <td>{{ $reticula->fechaenvigor }}</td>
                     <td>{{ $reticula->carrera_id }}</td>
