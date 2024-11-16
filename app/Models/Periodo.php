@@ -10,5 +10,5 @@ class Periodo extends Model
     /** @use HasFactory<\Database\Factories\PeriodoFactory> */
     use HasFactory;
 
-    protected $fillable=[ 'idperiodo','periodo', 'desccorta', 'fechaini', 'fechafin'];
+    protected $fillable=[ 'periodo', 'desccorta', 'fechaini', 'fechafin'];
 }

@@ -17,11 +17,33 @@ class ReticulaFactory extends Factory
      */
     public function definition(): array
     {
+        static $indice=-1;
+
+
+
+        $per = [
+
+        ['ISC'],
+
+        ['Industrial'],
+
+        ['Automotriz'],
+
+        ['Electronica'],
+
+        ['Contador'],
+
+        ['Mecatronica'],
+
+        ['Gestion'],
+
+        ];
+
+        $indice = ($indice + 1) % count($per);
         return [
-            'idreticula'=>fake()->bothify("????????#######"),
-            'descripcion'=>fake()->text($maxNbChars = 200),
+            'descripcion'=>$per[$indice][0],
             'fechaenvigor'=>fake()->date($format = 'Y-m-d', $max = 'now'),
-            "carrera_id"=>Carrera::factory()
+            'carrera_id' => Carrera::factory()
         ];
     }
 }

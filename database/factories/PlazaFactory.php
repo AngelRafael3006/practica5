@@ -16,9 +16,29 @@ class PlazaFactory extends Factory
      */
     public function definition(): array
     {
+        static $indice=-1;
+
+        
+
+        $per = [
+
+        ['E3817'],
+
+        ['E3815'],
+
+        ['E3717'],
+
+        ['E3617'],
+
+        ['E3520']
+
+        ];
+
+        $indice = ($indice + 1) % count($per);
+
         return [
             'idplaza'=>fake()->bothify("???####"),
-            'nombreplaza'=>fake()->jobTitle()
+            'nombreplaza'=>$per[$indice][0],
         ];
     }
 }

@@ -12,7 +12,7 @@ class Reticula extends Model
     /** @use HasFactory<\Database\Factories\ReticulaFactory> */
     use HasFactory;
 
-    protected $fillable=[ 'idreticula','descripcion', 'fechaenvigor'];
+    protected $fillable=[ 'descripcion', 'fechaenvigor'];
 
     public function materias(): HasMany
     {

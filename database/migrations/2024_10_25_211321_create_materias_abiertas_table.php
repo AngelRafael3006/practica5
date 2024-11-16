@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('materias_abiertas', function (Blueprint $table) {
             $table->id();
+            $table->string('materia_id');
+            $table->string('periodo_id');
+            $table->string('carrera_id');
             $table->timestamps();
         });
     }
@@ -23,5 +26,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('materias_abiertas');
-    }
+    }//mcxss
 };

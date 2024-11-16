@@ -13,11 +13,10 @@ return new class extends Migration
     {
         Schema::create('periodos', function (Blueprint $table) {
             $table->id();
-            $table->string("idperiodo",5)->unique();
-            $table->string("periodo",100);
-            $table->string("desccorta",10);
-            $table->date("fechaini");
-            $table->date("fechafin");
+            $table->string("periodo",20)->unique();
+            $table->string("desccorta",5)->unique();
+            $table->date("fechaini")->unique();
+            $table->date("fechafin")->unique();
             $table->timestamps();
         });
     }

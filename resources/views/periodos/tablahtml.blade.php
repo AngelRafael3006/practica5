@@ -13,7 +13,6 @@
                 </caption>
                 <tr>
                     <th>ID</th>
-                    <th>Id periodo</th>
                     <th>Periodo</th>
                     <th>Desccorta</th>
                     <th>Fecha Ini</th>
@@ -29,7 +28,6 @@
                     class="table-warning"
                 >
                     <td scope="row">{{ $periodo->id }}</td>
-                    <td>{{ $periodo->idperiodo }}</td>
                     <td>{{ $periodo->periodo }}</td>
                     <td>{{ $periodo->desccorta }}</td>
                     <td>{{ $periodo->fechaini }}</td>

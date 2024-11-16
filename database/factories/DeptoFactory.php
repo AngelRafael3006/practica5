@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Validation\Rules\Unique;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Depto>
@@ -15,13 +16,40 @@ class DeptoFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition(): array
-    {
-        $titulo=fake()->unique()->jobTitle();
-        return [
-            'iddepto'=>fake()->bothify("?#"),
-            'nombredepto'=>$titulo,
-            'nombremediano'=>fake()->lexify(str_repeat("?",15)),
-            'nombrecorto'=>substr($titulo,0,5),
+{
+
+        static $indice=-1;
+
+        $per = [
+
+        ['Subdireccion'],
+
+        ['ISC'],
+
+        ['IE'],
+
+        ['IM'],
+
+        ['IME'],
+
+        ['CP'],
+
+        ['IGE'],
+
+        ['II'],
+
+        ['Ciencias Basicas']
+
         ];
-    }
+
+        $indice = ($indice + 1) % count($per);
+
+    return [
+        'iddepto' => fake()->bothify("?#"),
+        'nombredepto' => $per[$indice][0],
+        'nombremediano' => fake()->lexify(str_repeat("?", 15)),
+        'nombrecorto' => fake()->unique()->text(5),
+    ];
+}
+
 }

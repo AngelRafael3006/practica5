@@ -11,9 +11,11 @@ class Materia extends Model
     /** @use HasFactory<\Database\Factories\MateriaFactory> */
     use HasFactory;
 
-    protected $fillable=[ 'idmateria','nombremateria', 'nivel', 'nombremediano', 'nombrecorto', 'modalidad'];
+    protected $fillable=[ 'nombremateria', 'nombremediano', 'nombrecorto', 'nivel', 'modalidad', 'semestre'];
 
     public function reticula(): BelongsTo{
         return $this->belongsTo(Reticula::class);
     }
+
+
 }

@@ -13,7 +13,6 @@
                 </caption>
                 <tr>
                     <th>ID</th>
-                    <th>Id reticula</th>
                     <th>Descripcion</th>
                     <th>Fecha en vigor</th>
                     <th>Id carrera</th>

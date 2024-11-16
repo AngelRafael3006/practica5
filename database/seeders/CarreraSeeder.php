@@ -15,10 +15,8 @@ class CarreraSeeder extends Seeder
      */
     public function run(): void
     {
-        Carrera::factory(3)
-            ->has(
-                Reticula::factory(1)
-                    ->has(Materia::factory(3))
-            )->create();
+        Carrera::factory(7)
+
+            ->create();
     }
 }

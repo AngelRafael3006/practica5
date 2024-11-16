@@ -11,7 +11,7 @@ class Alumno extends Model
     /** @use HasFactory<\Database\Factories\AlumnoFactory> */
     use HasFactory;
 
-    protected $fillable=[ 'noctrl','nombrealumno', 'apellidopaterno', 'apellidomaterno', 'sexo'];
+    protected $fillable=[ 'noctrl','nombrealumno', 'apellidopaterno', 'apellidomaterno', 'sexo', 'email'];
 
     public function carrera(): BelongsTo{
         return $this->belongsTo(Carrera::class);

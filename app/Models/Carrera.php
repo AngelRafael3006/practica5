@@ -27,4 +27,6 @@ class Carrera extends Model
     public function depto():BelongsTo{
         return $this->belongsTo(Depto::class);
     }
+
+    
 }

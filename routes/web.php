@@ -9,6 +9,13 @@ use App\Http\Controllers\CarreraController;
 use App\Http\Controllers\ReticulaController;
 use App\Http\Controllers\MateriaController;
 use App\Http\Controllers\PeriodoController;
+use App\Http\Controllers\PersonalController;
+use App\Http\Controllers\PersonalPlazaController;
+use App\Http\Controllers\EdificioController;
+use App\Http\Controllers\HoraController;
+use App\Http\Controllers\LugarController;
+use App\Http\Controllers\MateriasAbiertasController;
+use App\Models\Edificio;
 use Illuminate\Support\Facades\Route;
 
 
@@ -29,14 +36,17 @@ Route::resource("materias",MateriaController::class);
 
 Route::resource("periodos",PeriodoController::class);
 
+Route::resource("materiasa",MateriasAbiertasController::class);
 
+Route::resource("personals",PersonalController::class);
 
+Route::resource("personalplazas",PersonalPlazaController::class);
 
+Route::resource("edificios",EdificioController::class);
 
+Route::resource("lugares",LugarController::class);
 
-
-
-
+Route::resource("horas",HoraController::class);
 
 
 

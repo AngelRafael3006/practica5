@@ -11,7 +11,15 @@ class AlumnoController extends Controller
     public $val;
 
     function __construct(){
-        $this->alumnos = Alumno::paginate(5);
+        if( request("txtbuscar")){
+            $txtbuscar = request("txtbuscar");
+        } else{
+            $txtbuscar = "";
+        }
+         $this->alumnos = Alumno::with('carrera.depto')->where("nombrealumno","like","$txtbuscar%")->paginate(5);
+
+
+        //$this->alumnos = Alumno::paginate(5);
         $this->val=[
             'noctrl'=>'required',
             'nombrealumno'=>['required', 'min:3','max:50','regex:/^[\p{L}\s]+$/u'],

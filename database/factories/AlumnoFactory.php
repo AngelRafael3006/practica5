@@ -23,6 +23,7 @@ class AlumnoFactory extends Factory
             'apellidopaterno'=>fake()->lastName(),
             'apellidomaterno'=>fake()->lastName(),
             'sexo'=>fake()->randomElement(['M','F']),
+            'email'=>fake()->email(),
             'carrera_id'=>Carrera::factory()
         ];
     }
