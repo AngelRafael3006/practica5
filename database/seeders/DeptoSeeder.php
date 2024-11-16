@@ -8,7 +8,7 @@ use App\Models\Alumno;
 use App\Models\Reticula;
 use App\Models\Materia;
 use App\Models\Personal;
-use App\Models\personalPlaza;
+use App\Models\PersonalPlaza;
 use Illuminate\Database\Seeder;
 
 class DeptoSeeder extends Seeder
